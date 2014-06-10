@@ -27,7 +27,16 @@ $(document).ready(function(){
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
+    window.dancers.push(dancer);
     $('body').append(dancer.$node);
+  });
+
+  $(".lineupButton").on("click", function() {
+    //console.log("Time to line up");
+    for (var i=0; i < window.dancers.length; i++) {
+      var currDancer = window.dancers[i];
+      //console.log(currDancer);
+    }
   });
 });
 
