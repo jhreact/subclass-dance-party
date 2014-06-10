@@ -35,7 +35,7 @@ Dancer.prototype.setPosition = function(top, left){
 };
 
 Dancer.prototype.lineup = function(top, left){
-  dancer.setPosition(dancer.top, 30);
+  this.setPosition(this.top, 30);
 }
 
 Dancer.prototype.rotateImgQueue = function() {
