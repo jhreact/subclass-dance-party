@@ -35,6 +35,7 @@ $(document).ready(function(){
     //console.log("Time to line up");
     for (var i=0; i < window.dancers.length; i++) {
       var currDancer = window.dancers[i];
+      currDancer.lineup();
       //console.log(currDancer);
     }
   });
