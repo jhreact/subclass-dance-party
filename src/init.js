@@ -27,8 +27,17 @@ $(document).ready(function(){
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
-    window.dancers.push(dancer);
+
     $('body').append(dancer.$node);
+
+    for (var od=0; od < window.dancers.length; od++) {
+      var otherDancer = window.dancers[od];
+      if (dancer.distance(otherDancer) < 300) {
+        alert("TOO DAMN CLOSE!!!");
+      }
+    }
+
+    window.dancers.push(dancer);
   });
 
   $(".lineupButton").on("click", function() {
